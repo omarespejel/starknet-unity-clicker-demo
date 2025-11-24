@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 // World address from deployment
-const WORLD_ADDRESS = process.env.WORLD_ADDRESS || '0x036a97624274017898f269fa20ba5f44d0b586e7d0ec1ebef98b8d76926c1bed';
+const WORLD_ADDRESS = process.env.WORLD_ADDRESS || '0x032c4b5442817f7c7e6c3127dcafd7c5898e97d5f067fd8477437bff3e5bbfd6';
 
 // Cartridge RPC with paymaster support
 const provider = new RpcProvider({
