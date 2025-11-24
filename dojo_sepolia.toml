@@ -4,9 +4,9 @@ description = "A simple on-chain clicker game demo"
 cover_uri = "file://assets/cover.png"
 icon_uri = "file://assets/icon.png"
 website = "https://github.com/dojoengine/dojo-starter"
-seed = "clickergame456"
+seed = "clickergame2024"
 
-world_address = "0x036a97624274017898f269fa20ba5f44d0b586e7d0ec1ebef98b8d76926c1bed"
+world_address = "0x032c4b5442817f7c7e6c3127dcafd7c5898e97d5f067fd8477437bff3e5bbfd6"
 
 [world.socials]
 x = "https://x.com/ohayo_dojo"
@@ -15,7 +15,7 @@ github = "https://github.com/dojoengine/dojo-starter"
 telegram = "https://t.me/dojoengine"
 
 [namespace]
-default = "clickergame"
+default = "clickerv2"
 
 [env]
 # Sepolia RPC endpoints
@@ -27,13 +27,14 @@ default = "clickergame"
 rpc_url = "https://api.cartridge.gg/x/starknet/sepolia"
 
 # Your funded account from sncast account create
-account_address = "0x03ca968f17e08a636d99b12b9f10a0adcb6c22bb25140b861a8dde8b0ad1fa1d"
-private_key = "0x4b8964412f755c2520b8b6d7f3f234d6d826d0ee6645e90af8540c53a648cac"
+# New account to avoid class hash conflicts
+account_address = "0x078c26a3a5e8c2db04d1298762271abccfeea7da21aa4e0d58ae0370e8ff0cf3"
+private_key = "0xfab17d421a96b5c8d681cafa96cf54d94e2a47b19fe216fc48a91942c68bbf"
 
 # World address from deployment
 
 [writers]
-"clickergame" = ["gg-clicker"]
+"clickerv2" = ["clickerv2::clicker"]
 
 [cartridge]
 enable_controller = true
