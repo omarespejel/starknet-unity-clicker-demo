@@ -1,0 +1,19 @@
+world_address = "0x0351370343b0539620add3c7949d442dbc55342f8fa04728d8b4133a22b23221"
+rpc = "https://api.cartridge.gg/x/starknet/sepolia"
+start_block = 0
+index_pending = false
+
+[database]
+db_dir = "./torii_sepolia"
+
+[http]
+enabled = true
+host = "0.0.0.0"
+port = 8080
+cors_origins = ["*"]
+
+[grpc]
+enabled = true
+host = "0.0.0.0"
+port = 8081
+
