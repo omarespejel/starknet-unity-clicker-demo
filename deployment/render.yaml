@@ -1,0 +1,31 @@
+services:
+  # Backend API
+  - type: web
+    name: migration-game-backend
+    env: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: PORT
+        value: 3001
+      - key: STARKNET_RPC_URL
+        sync: false
+      - key: WORLD_ADDRESS
+        sync: false
+      - key: ACCOUNT_ADDRESS
+        sync: false
+      - key: PRIVATE_KEY
+        sync: false
+      - key: TORII_URL
+        sync: false
+
+  # Frontend
+  - type: web
+    name: migration-game-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/build
+    envVars:
+      - key: REACT_APP_API_URL
+        sync: false
+
