@@ -1,5 +1,5 @@
 [package]
-name = "dojo_starter"
+name = "unity_clicker_v2"
 version = "1.8.0"
 edition = "2024_07"
 
@@ -30,6 +30,7 @@ starknet = "2.13.1"
 
 [[target.starknet-contract]]
 build-external-contracts = ["dojo::world::world_contract::world"]
+casm = true
 
 [tool.scarb]
 allow-prebuilt-plugins = ["dojo_cairo_macros"]
